@@ -1,0 +1,9 @@
+{
+  "name": "page-parser",
+  "version": "1.0.0",
+  "description": "Parse a page and get back structured data",
+  "private": false,
+  "dependencies": {
+    "@postlight/mercury-parser": "^2.1.0"
+  }
+}
