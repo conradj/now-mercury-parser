@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Mercury Web Parser function</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <style>
+      body {
+        font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+        margin: 20px;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+      a {
+        cursor: pointer;
+        color: #0076FF;
+        text-decoration: none;
+        transition: all 0.2s ease;
+        border-bottom: 1px solid white;
+      }
+      a:hover {
+        border-bottom: 1px solid #0076FF;
+      }
+      ul {
+        padding: 0;
+        list-style-type: none;
+        margin-left: 15px;
+      }
+      li {
+        margin-bottom: 10px;
+      }
+      li:before {
+        content: '–';
+        display: inline-block;
+        color: #999;
+        position: absolute;
+        margin-left: -15px;
+        transition: color 0.2s ease;
+      }
+    </style>
+    <body>
+        <div class="container">
+          <div class="wrapper">
+            <h1><a href="https://github.com/conradj/now-mercury-parser">Mercury web parser hosted on Now</a></h1>
+            <p>Please provide a path to a website or choose one of the following:</p>
+            <ul>
+                <li><a href="/https://www.bbc.co.uk/sport/football/48195879">BBC page</a></li>
+                <li><a href="/https://onezero.medium.com/the-ecological-problem-with-octopus-farming-4f7eea8d9b4c">Medium blog</a></li>
+                <li><a href="/https://en.wikipedia.org/wiki/HTTP_403">Wiki article</a></li>
+            </ul>
+          </div>
+        </div>
+    </body>
+</html>
