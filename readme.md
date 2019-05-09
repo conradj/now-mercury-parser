@@ -6,7 +6,7 @@
 ## Guide
 1. [Setup Github integration for Now](https://zeit.co/github-setup). This will look for a `now.json` file in your Github repos and deploy to `Now` after a push.
 2. Fork this repo to deploy 🎉
-3. That's it! 🤯 `Now` will give you a URL that will look a bit like https://page-parser.beyonceknowles.now.sh. So if you want to parse [this](https://www.bbc.co.uk/news/world-europe-48198755) odd story about a speeding pigeon then you would call `https://page-parser.beyonceknowles.now.sh/https://www.bbc.co.uk/news/world-europe-48198755` and get a response as follows:
+3. That's it! 🤯 `Now` will give you a URL that will look a bit like https://now-mercury-parser.now.sh. So if you want to parse [this](https://www.bbc.co.uk/news/world-europe-48198755) odd story about a speeding pigeon then you would call `https://now-mercury-parser.beyonceknowles.now.sh/https://www.bbc.co.uk/news/world-europe-48198755` and get a response as follows:
 
 ```json
 {
