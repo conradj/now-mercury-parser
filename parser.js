@@ -4,19 +4,15 @@ const { getInt, getUrlFromPath, isValidUrl } = require('./validator');
 
 module.exports = async function (req, res) {
     try {
-        console.log("here1")
-        console.log(req.url)
         const { pathname = '/', query = {} } = parseUrl(req.url, true);
         const { type = 'png', quality, fullPage } = query;
         const pathUrl = getUrlFromPath(pathname);
-        //const qual = getInt(quality);
         if (!isValidUrl(pathUrl)) {
             res.statusCode = 400;
             res.setHeader('Content-Type', 'text/html');
             res.end(`<h1>Bad Request</h1><p>The url <em>${pathUrl}</em> is not valid.</p>`);
         } else {
             await Mercury.parse(pathUrl).then(result => {
-                console.log(result)
                 res.statusCode = 200;
                 res.setHeader('Content-Type', 'application/json');
                 res.end(JSON.stringify(result));
