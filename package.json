@@ -4,6 +4,6 @@
   "description": "Parse a page and get back structured data",
   "private": false,
   "dependencies": {
-    "@postlight/mercury-parser": "^2.1.0"
+    "@postlight/mercury-parser": "^2.2.1"
   }
 }
